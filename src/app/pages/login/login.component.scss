@@ -1,0 +1,55 @@
+.circulo {
+    width: 80%;
+    height: 40%;
+    background: #146C94;
+    border-radius: 50%;
+  }
+
+ion-input.input-usuario {
+    background: #19A7CE;
+    color: #ffffff;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+ion-input.input-key {
+  background: #19A7CE;
+    color: #ffffff;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.custom-label-1 {
+    display: flex;
+    justify-content: right;
+    color: black;
+    font-size: 15px;
+}
+
+.custom-label-2 {
+    justify-content: left;
+    color: #19A7CE;
+    font-size: 15px;
+}
+
+.button{
+  background: #146C94;
+  color: #ffffff;
+  border-radius: 40px;
+  font-size: 15px;
+}
+
+.custom-label-3 {
+  display: flex;
+  justify-content: left;
+  color: #146C94;
+  font-size: 20px;
+}
+.custom-label-4 {
+  display: flex;
+  justify-content: right;
+  color: black;
+  font-size: 20px;
+}

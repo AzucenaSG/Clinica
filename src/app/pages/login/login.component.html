@@ -1,0 +1,75 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="outer-div" style="margin-top: 100px;">
+    <div style="width: 80%; text-align: center;">
+      <img class="imglogo" src="assets/imgs/Logo_Clinica.png" >
+    </div>
+  </div>
+
+  <div class="circulo" style="position: absolute; top: -22%; right: -42%; box-shadow: 0px 13px 13px rgba(0, 0, 0, 0.25);">
+  </div>
+
+  <div class="outer-div" style="margin-top: 5px;">
+    <div style="text-align: center;">
+      <p class="font5000 cAzul2" style="font-size: 35px; line-height: 0px;">¡Bienvenido!</p>
+    </div>
+  </div>
+
+  <ion-grid style="margin-top: 5px;">
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-input class="input-usuario font200" type="text" placeholder="Correo Electronico" ></ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-input class="input-key font200" type="text" placeholder="Contraseña" type="password"></ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="2">
+        <ion-label class="custom-label-1 font200">Olvide</ion-label>
+      </ion-col>
+      <ion-col size="3.5">
+        <ion-label class="custom-label-2 font200">Contraseña</ion-label>
+      </ion-col>
+      <ion-col size=".5"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="5">
+        <ion-button  expand="block" fill="clear" shape="round" class="button font200">
+          Iniciar
+        </ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 5%;">
+      <ion-col></ion-col>
+      <ion-col size="2">
+        <ion-label class="custom-label-4 font200" color="orange">Crear</ion-label>
+      </ion-col>
+      <ion-col size="2">
+        <ion-label class="custom-label-3 font200" [routerLink]="['/registro']">cuenta</ion-label>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>    
+  </ion-grid>
+
+  <div class="circulo" style="position: absolute; bottom: -17%; left: -47%; box-shadow: 8px 13px 13px rgba(0, 0, 0, 0.4);">
+  </div>
+
+</ion-content>

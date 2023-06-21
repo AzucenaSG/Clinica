@@ -24,3 +24,53 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+.outer-div {
+    display: flex; /* establece el contenedor como flexible */
+    justify-content: center; /* centra horizontalmente el contenido del contenedor */
+    align-items: center; /* centra verticalmente el contenido del contenedor */
+}
+
+.font{
+    font-family: 'Inter', sans-serif !important;
+}
+
+.font200{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 200;
+}
+
+.font300{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 300;
+}
+
+.font400{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400;
+}
+.font500{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400;
+}
+
+.BAzul1{
+    background-color: #146C94;
+}
+
+.BAzul2{
+    background-color: #19A7CE;
+}
+
+.cAzul1{
+    color:#146C94;
+}
+
+.cAzul2{
+    color:#19A7CE;
+}
+
+.cBlanco{
+    color: #ffffff;
+}
