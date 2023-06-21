@@ -4,12 +4,16 @@ import { HomeComponent } from './pages/home/home.component';
 import { ConfigComponent } from './backend/config/config.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { TipoPersonaComponent } from './pages/tipo-persona/tipo-persona.component';
+import { PersonaExtComponent } from './pages/persona-ext/persona-ext.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'config', component: ConfigComponent},
   { path: 'login', component: LoginComponent},
   { path: 'registro', component: RegistroComponent},
+  { path: 'persona', component: TipoPersonaComponent},
+  { path: 'personaExterna', component: PersonaExtComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {

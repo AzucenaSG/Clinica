@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
+import { TipoPersonaComponent } from './tipo-persona/tipo-persona.component';
+import { PersonaExtComponent } from './persona-ext/persona-ext.component';
 
 
 
@@ -13,7 +15,9 @@ import { RegistroComponent } from './registro/registro.component';
   declarations: [
     HomeComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    TipoPersonaComponent,
+    PersonaExtComponent
   ],
   imports: [
     CommonModule,
