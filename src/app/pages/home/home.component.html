@@ -22,7 +22,7 @@
 
   <div class="outer-div" style="margin-top: 40px; width: 100%;">
     <div style="text-align: center; width: 100%;">
-      <ion-card [routerLink]="['/persona']" class="cardAzul" style="height: 100px; width: 95%;">
+      <ion-card [routerLink]="['/persona']" routerDirection="forward" class="cardAzul" style="height: 100px; width: 95%;">
         <p class="font300" style="color: white; font-size: 40px; line-height: 14px;">Agendar</p>
       </ion-card>
     </div>
@@ -30,7 +30,7 @@
 
   <div class="outer-div" style="margin-top: 5px; width: 100%;">
     <div style="text-align: center; width: 100%;">
-      <ion-card [routerLink]="['/home']" class="cardAzul" style="height: 100px; width: 95%;">
+      <ion-card [routerLink]="['/persona']" routerDirection="back" class="cardAzul" style="height: 100px; width: 95%;">
         <p class="font300" style="color: white; font-size: 40px; line-height: 14px;">Resultados</p>
       </ion-card>
     </div>
@@ -38,7 +38,7 @@
 
   <div class="outer-div" style="margin-top: 5px; width: 100%;">
     <div style="text-align: center; width: 100%;">
-      <ion-card [routerLink]="['/home']" class="cardAzul" style="height: 100px; width: 95%;">
+      <ion-card (click)="onClick2()" class="cardAzul" style="height: 100px; width: 95%;">
         <p class="font300" style="color: white; font-size: 40px; line-height: 14px;">cperfil</p>
       </ion-card>
     </div>
