@@ -6,6 +6,11 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { TipoPersonaComponent } from './pages/tipo-persona/tipo-persona.component';
 import { PersonaExtComponent } from './pages/persona-ext/persona-ext.component';
+import { TipoAnalisisComponent } from './pages/tipo-analisis/tipo-analisis.component';
+import { ProductAnalisComponent } from './pages/product-analis/product-analis.component';
+import { RecomendacionesComponent } from './pages/recomendaciones/recomendaciones.component';
+import { PagoComponent } from './pages/pago/pago.component';
+import { ResultadosComponent } from './pages/resultados/resultados.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,6 +19,11 @@ const routes: Routes = [
   { path: 'registro', component: RegistroComponent},
   { path: 'persona', component: TipoPersonaComponent},
   { path: 'personaExterna', component: PersonaExtComponent},
+  { path: 'tipoAnalisis', component: TipoAnalisisComponent},
+  { path: 'producto', component: ProductAnalisComponent},
+  { path: 'recomendaciones', component: RecomendacionesComponent},
+  { path: 'pago', component: PagoComponent},
+  { path: 'resultados', component: ResultadosComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {

@@ -8,6 +8,11 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { TipoPersonaComponent } from './tipo-persona/tipo-persona.component';
 import { PersonaExtComponent } from './persona-ext/persona-ext.component';
+import { TipoAnalisisComponent } from './tipo-analisis/tipo-analisis.component';
+import { ProductAnalisComponent } from './product-analis/product-analis.component';
+import { RecomendacionesComponent } from './recomendaciones/recomendaciones.component';
+import { PagoComponent } from './pago/pago.component';
+import { ResultadosComponent } from './resultados/resultados.component';
 
 
 
@@ -17,7 +22,12 @@ import { PersonaExtComponent } from './persona-ext/persona-ext.component';
     LoginComponent,
     RegistroComponent,
     TipoPersonaComponent,
-    PersonaExtComponent
+    PersonaExtComponent,
+    TipoAnalisisComponent,
+    ProductAnalisComponent,
+    RecomendacionesComponent,
+    PagoComponent,
+    ResultadosComponent
   ],
   imports: [
     CommonModule,
