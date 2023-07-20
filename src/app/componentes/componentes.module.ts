@@ -4,12 +4,14 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AddcateComponent } from './addcate/addcate.component';
+import { AddAnalisisComponent } from './add-analisis/add-analisis.component';
 
 
 
 @NgModule({
   declarations: [
-    AddcateComponent
+    AddcateComponent,
+    AddAnalisisComponent
   ],
   imports: [
     CommonModule,

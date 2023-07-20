@@ -18,3 +18,8 @@ export interface Analisis {
     nombre: string;
     precio: number;
 }
+
+export interface Recomendacion {
+    id: string;
+    descripcion: string;
+}

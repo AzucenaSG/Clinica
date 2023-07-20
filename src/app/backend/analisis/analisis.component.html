@@ -3,7 +3,7 @@
   <ion-grid>
     <ion-row>
   <ion-col size="2">
-    <svg [routerLink]="['/categorias']" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-left-short cAzul1" viewBox="0 0 16 16">
+    <svg [routerLink]="['/menuAdmin']" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-left-short cAzul1" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
     </svg>
   </ion-col>
@@ -18,13 +18,20 @@
   </ion-grid>
   <div style="text-align: center;">
     <ion-label class="titul font500">Analisis</ion-label><br>
-    <svg  style="margin-top: 30px;" fill="#146C94" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 1.95 1.95" enable-background="new 0 0 52 52" xml:space="preserve"><path d="M1.125 1.087h0.619c0.03 0 0.056 -0.026 0.056 -0.056v-0.112c0 -0.03 -0.026 -0.056 -0.056 -0.056H1.125c-0.022 0 -0.037 -0.015 -0.037 -0.037V0.206c0 -0.03 -0.026 -0.056 -0.056 -0.056h-0.112c-0.03 0 -0.056 0.026 -0.056 0.056V0.825c0 0.022 -0.015 0.037 -0.037 0.037H0.206c-0.03 0 -0.056 0.026 -0.056 0.056v0.112c0 0.03 0.026 0.056 0.056 0.056H0.825c0.022 0 0.037 0.015 0.037 0.037v0.619c0 0.03 0.026 0.056 0.056 0.056h0.112c0.03 0 0.056 -0.026 0.056 -0.056V1.125c0 -0.022 0.015 -0.037 0.037 -0.037z"/></svg>
+    <svg (click)="openmodal()" style="margin-top: 30px;" fill="#146C94" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 1.95 1.95" enable-background="new 0 0 52 52" xml:space="preserve"><path d="M1.125 1.087h0.619c0.03 0 0.056 -0.026 0.056 -0.056v-0.112c0 -0.03 -0.026 -0.056 -0.056 -0.056H1.125c-0.022 0 -0.037 -0.015 -0.037 -0.037V0.206c0 -0.03 -0.026 -0.056 -0.056 -0.056h-0.112c-0.03 0 -0.056 0.026 -0.056 0.056V0.825c0 0.022 -0.015 0.037 -0.037 0.037H0.206c-0.03 0 -0.056 0.026 -0.056 0.056v0.112c0 0.03 0.026 0.056 0.056 0.056H0.825c0.022 0 0.037 0.015 0.037 0.037v0.619c0 0.03 0.026 0.056 0.056 0.056h0.112c0.03 0 0.056 -0.026 0.056 -0.056V1.125c0 -0.022 0.015 -0.037 0.037 -0.037z"/></svg>
   </div>
   </ion-header>
 
 <ion-content>
 
-
+  <div class="outer-div" *ngFor="let analisis of analisis">
+    <div style="width: 90%;">
+      <ion-item (click)="openmodal2(analisis)" >
+        <ion-label>{{analisis.nombre}}</ion-label>
+        <ion-badge slot="end" color="tertiary">$ {{analisis.precio}}</ion-badge>
+      </ion-item>
+    </div>
+  </div>
 
 </ion-content>
 
