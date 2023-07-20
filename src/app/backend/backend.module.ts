@@ -4,12 +4,14 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ConfigComponent } from './config/config.component';
+import { MenuAdminComponent } from './menu-admin/menu-admin.component';
 
 
 
 @NgModule({
   declarations: [
-    ConfigComponent
+    ConfigComponent,
+    MenuAdminComponent
   ],
   imports: [
     CommonModule,

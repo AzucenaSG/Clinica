@@ -21,7 +21,7 @@ export class AppComponent {
     this.firebaseauthService.stateAuth().subscribe( res => {
           if (res !== null) {
             this.idUsuario = res.uid;
-              if (this.idUsuario === 'ouTxtYBq2YNxYFoaJCPzpZiY6F73')  {
+              if (this.idUsuario === '0p97jkz59RPRM4Ok8hvGu2d1NN22')  {
                   this.admin = true;
                   this.usuario = false;
                   this.navController.navigateForward('/menuAdmin');
