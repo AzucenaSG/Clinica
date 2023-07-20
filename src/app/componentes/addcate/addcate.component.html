@@ -48,7 +48,7 @@
     </div>
     
     <div class="outer-div" style="margin-top: 10px;">
-      <div style="width: 140px;">
+      <div *ngIf="newCategoria.foto" style="width: 140px;">
         <ion-thumbnail>
           <img [src]="newCategoria.foto" />
         </ion-thumbnail>

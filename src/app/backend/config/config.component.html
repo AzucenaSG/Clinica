@@ -25,13 +25,14 @@
 
 <ion-content>
 
-  <div class="outer-div" *ngFor="let item of [1,1,1,1,1,1,1,1]">
+  <div class="outer-div" *ngFor="let categoria of categorias">
     <div style="width: 90%;">
-      <ion-item>
+      <ion-item (click)="irAnalisis(categoria.id)">
         <ion-thumbnail slot="start">
-          <img src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          <img [src]="categoria.foto"/>
         </ion-thumbnail>
-        <ion-label> Thumbnail Item </ion-label>
+        <ion-label>{{categoria.nombre}}</ion-label>
+        <ion-icon (click)="openmodal2(categoria)" name="create-outline" size="large" slot="end" color="tertiary"></ion-icon>
       </ion-item>
     </div>
   </div>

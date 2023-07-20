@@ -13,6 +13,7 @@ import { PagoComponent } from './pages/pago/pago.component';
 import { ResultadosComponent } from './pages/resultados/resultados.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { MenuAdminComponent } from './backend/menu-admin/menu-admin.component';
+import { AnalisisComponent } from './backend/analisis/analisis.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'resultados', component: ResultadosComponent},
   { path: 'perfil', component: PerfilComponent},
   { path: 'menuAdmin', component: MenuAdminComponent},
+  { path: 'analisis', component: AnalisisComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {
