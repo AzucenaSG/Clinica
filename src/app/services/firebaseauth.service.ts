@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Cliente } from '../models';
 import { FirestoreService } from './firestore.service';
+import { NavController } from '@ionic/angular';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,8 @@ export class FirebaseauthService {
   uid: any;
 
   constructor(public auth: AngularFireAuth,
-    private firestoreService: FirestoreService) {
+    private firestoreService: FirestoreService,
+    private navController: NavController) {
       this.stateUser();
     }
 
@@ -61,5 +63,9 @@ async getInfoUser() {
         }
   });
 }
+
+irlogin(){
+  this.navController.navigateForward('/login');
+ }
 
 }

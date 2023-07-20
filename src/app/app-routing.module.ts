@@ -11,6 +11,7 @@ import { ProductAnalisComponent } from './pages/product-analis/product-analis.co
 import { RecomendacionesComponent } from './pages/recomendaciones/recomendaciones.component';
 import { PagoComponent } from './pages/pago/pago.component';
 import { ResultadosComponent } from './pages/resultados/resultados.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'recomendaciones', component: RecomendacionesComponent},
   { path: 'pago', component: PagoComponent},
   { path: 'resultados', component: ResultadosComponent},
+  { path: 'perfil', component: PerfilComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {

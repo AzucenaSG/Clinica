@@ -13,6 +13,7 @@ import { ProductAnalisComponent } from './product-analis/product-analis.componen
 import { RecomendacionesComponent } from './recomendaciones/recomendaciones.component';
 import { PagoComponent } from './pago/pago.component';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -27,7 +28,8 @@ import { ResultadosComponent } from './resultados/resultados.component';
     ProductAnalisComponent,
     RecomendacionesComponent,
     PagoComponent,
-    ResultadosComponent
+    ResultadosComponent,
+    PerfilComponent
   ],
   imports: [
     CommonModule,

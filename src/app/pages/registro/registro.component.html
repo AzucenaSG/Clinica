@@ -25,7 +25,7 @@
     <ion-row>
       <ion-col size=".5"></ion-col>
       <ion-col>
-        <ion-input class="input-text font500" type="text" placeholder=" Nombre y apellido" ></ion-input>
+        <ion-input [(ngModel)]="cliente.nombre" class="input-text font500" type="text" placeholder=" Nombre y apellido" ></ion-input>
       </ion-col>
       <ion-col size=".5"></ion-col>
     </ion-row>
@@ -33,7 +33,7 @@
     <ion-row>
       <ion-col size=".5"></ion-col>
       <ion-col>
-        <ion-input class="input-text font500" type="text" placeholder=" Correo electronico" ></ion-input>
+        <ion-input [(ngModel)]="cliente.email" class="input-text font500" type="text" placeholder=" Correo electronico" ></ion-input>
       </ion-col>
       <ion-col size=".5"></ion-col>
     </ion-row>
@@ -41,7 +41,7 @@
     <ion-row>
       <ion-col size=".5"></ion-col>
       <ion-col>
-        <ion-input class="input-text font500" type="text" placeholder=" Contraseña" type="password"></ion-input>
+        <ion-input [(ngModel)]="cliente.contrasena" class="input-text font500" type="text" placeholder=" Contraseña" type="password"></ion-input>
       </ion-col>
       <ion-col size=".5"></ion-col>
     </ion-row>
@@ -49,7 +49,7 @@
     <ion-row>
       <ion-col size=".5"></ion-col>
       <ion-col>
-        <ion-input class="input-text font500" type="text" placeholder=" Sexo" ></ion-input>
+        <ion-input [(ngModel)]="cliente.sexo" class="input-text font500" type="text" placeholder=" Sexo" ></ion-input>
       </ion-col>
       <ion-col size=".5"></ion-col>
     </ion-row>
@@ -57,25 +57,20 @@
     <ion-row>
       <ion-col size=".5"></ion-col>
       <ion-col>
-        <ion-input class="input-text font500" type="number" placeholder=" Numero de celular" ></ion-input>
+        <ion-input [(ngModel)]="cliente.celular" class="input-text font500" type="number" placeholder=" Numero de celular" ></ion-input>
       </ion-col>
       <ion-col size=".5"></ion-col>
     </ion-row>
 
-    <!-- <ion-row>
-      <ion-col size="1"></ion-col>
-      <ion-col>
-        <ion-button expand="block" fill="clear" shape="round" size="large" class="register font200">
-          crear cuenta
-        </ion-button>
-      </ion-col>
-      <ion-col size="1"></ion-col>
-    </ion-row> -->
+    <div style="text-align: center; margin-top: 20px; ">
+      <ion-checkbox id="terms" (ionChange)="onTermsChanged($event)" [checked]="canDismiss"></ion-checkbox>
+      <ion-label style="margin-left: 15px; color: black;" class="ion-text-wrap" >Acepto terminos y condiciones.</ion-label>
+   </div>
     
     <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col>
-        <ion-card [routerLink]="['/home']" class="register" style="height: 65px;">
+        <ion-card (click)="registrar()" class="register" style="height: 65px;">
           <p class="font200" style="color: white; font-size: 25px; line-height: 14px;">crear cuenta</p>
         </ion-card>
       </ion-col>

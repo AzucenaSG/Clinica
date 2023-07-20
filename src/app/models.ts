@@ -2,8 +2,7 @@ export interface Cliente {
     uid: string;
     email: string;
     celular: string;
-    foto: string;
+    sexo: string;
     nombre: string;
-    referencia: string;
-    ubicacion: any;
+    contrasena: string;
  }

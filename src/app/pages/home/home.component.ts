@@ -36,7 +36,7 @@ export class HomeComponent  implements OnInit {
 
   onClick2(){
     // this.navCtrl.pop();
-    this.navCtrl.navigateForward(`persona`, { animated: false});
+    this.navCtrl.navigateForward(`perfil`, { animated: false});
     }
 
 }
