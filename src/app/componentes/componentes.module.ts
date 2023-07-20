@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AddcateComponent } from './addcate/addcate.component';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AddcateComponent } from './addcate/addcate.component';
 
 
 
@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     IonicModule,
     RouterModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class ComponentesModule { }
