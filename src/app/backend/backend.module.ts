@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ConfigComponent } from './config/config.component';
 import { MenuAdminComponent } from './menu-admin/menu-admin.component';
+import { ComponentesModule } from '../componentes/componentes.module';
 
 
 
@@ -18,6 +19,7 @@ import { MenuAdminComponent } from './menu-admin/menu-admin.component';
     IonicModule,
     RouterModule,
     FormsModule,
+    ComponentesModule
   ]
 })
 export class BackendModule { }
