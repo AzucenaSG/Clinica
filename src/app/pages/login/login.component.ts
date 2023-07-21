@@ -17,6 +17,7 @@ export class LoginComponent  implements OnInit {
     celular: '',
     sexo: '',
     nombre: '',
+    edad: 0,
     contrasena: ''
   };
 
@@ -49,6 +50,7 @@ export class LoginComponent  implements OnInit {
       celular: '',
       sexo: '',
       nombre: '',
+      edad: 0,
       contrasena: ''
     };
   }

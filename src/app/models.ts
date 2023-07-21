@@ -4,6 +4,7 @@ export interface Cliente {
     celular: string;
     sexo: string;
     nombre: string;
+    edad: number;
     contrasena: string;
 }
 
@@ -22,4 +23,13 @@ export interface Analisis {
 export interface Recomendacion {
     id: string;
     descripcion: string;
+}
+
+export interface Persona {
+    id: string;
+    celular: string;
+    sexo: string;
+    nombre: string;
+    edad: number;
+    analisis: string;
 }

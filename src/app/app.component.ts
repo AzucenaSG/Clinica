@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FirebaseauthService } from './services/firebaseauth.service';
 import { NavController } from '@ionic/angular';
+import { PersonaService } from './services/persona.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ export class AppComponent {
   usuario = false;
   idUsuario = '';
   constructor(private firebaseauthService: FirebaseauthService,
-              private navController: NavController) {
+              private navController: NavController,
+              private personaService: PersonaService) {
     this.getUid();
   }
 

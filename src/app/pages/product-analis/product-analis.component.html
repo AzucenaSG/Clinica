@@ -16,25 +16,26 @@
     </ion-row>
   </ion-grid>
   <div style="text-align: center;">
-    <ion-label class="titul font500">Analisis de</ion-label><br>
-    <ion-label class="titul font500">sangre</ion-label>
+    <ion-label class="titul font500" style="font-size: 30px;">{{categoria.nombre}}</ion-label><br>
   </div>
   <div class="outer-div" style="margin-top: 1px;">
     <div style="text-align: center;">
-      <img style="height: 130px;"  src="assets/imgs/imgAnalisis2.png" >
+      <img style="height: 130px;" [src]="categoria.foto">
     </div>
   </div>
   </ion-header>
 
 <ion-content>
 
-  <div class="outer-div" style="margin-top: 20px; width: 100%;">
-    <div style="text-align: center; width: 100%;">
-      <ion-card [routerLink]="['/recomendaciones']" class="cardAzul" style="height: 100px; width: 95%;">
-        <p class="font300" style="color: white; font-size: 40px; line-height: 30px; margin-top: 24px;">Plaquetas</p>
-      </ion-card>
+  <div *ngFor="let analisi of analisis">
+    <div class="outer-div" style="margin-top: 20px; width: 100%;">
+      <div style="text-align: center; width: 100%;">
+        <ion-card (click)="irRecomendaciones(analisi.id)" class="cardAzul" style="height: 100px; width: 95%;">
+          <p class="font300" style="color: white; font-size: 40px; line-height: 30px; margin-top: 24px;">{{analisi.nombre}}</p>
+        </ion-card>
+      </div>
     </div>
-  </div>
+  </div> 
 
 </ion-content>
 

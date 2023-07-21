@@ -33,13 +33,13 @@
 <ion-content>
 
   <ion-grid style="margin-top: 40px;">
-    <ion-row>
+    <ion-row  *ngFor="let recomendacion of recomendaciones">
       <ion-col size=".5"></ion-col>
       <ion-col size="2" style="display: flex; justify-content: center; align-items: center; text-align: center;">
-        <div class="circulo4" >1</div>
+        <div class="circulo4"></div>
       </ion-col>
       <ion-col style="display: flex; text-align: center; align-items: center; align-content: center">
-        <ion-label class="font titul" style="font-size: 25px; font-weight: bolder; line-height: 25px; justify-content: center; align-items: center; text-align: center;">Ir en ayunas</ion-label>
+        <ion-label class="font titul" style="font-size: 25px; font-weight: bolder; line-height: 25px; justify-content: center; align-items: center; text-align: center;">{{recomendacion.descripcion}}</ion-label>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
@@ -50,7 +50,7 @@
 <ion-footer class="ion-no-border">
   <div class="outer-div">
     <div style="text-align: center; width: 45%;">
-      <ion-button shape="round" size="large" expand="block" color="tertiary" [routerLink]="['/pago']">Pagar</ion-button>
+      <ion-button shape="round" size="large" expand="block" color="tertiary" (click)="pagar()">Pagar</ion-button>
     </div>
   </div>
 

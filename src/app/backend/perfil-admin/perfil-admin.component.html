@@ -1,0 +1,77 @@
+<ion-header class="centrado ion-no-border">
+  <ion-grid>
+    <ion-row>
+  <ion-col size="2">
+    <svg [routerLink]="['/menuAdmin']" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-left-short cAzul1" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+    </svg>
+  </ion-col>
+  <ion-col style="height: 20px;">
+    <ion-toolbar>
+      <ion-label class="titul font400">Perfil</ion-label><br>
+    </ion-toolbar>
+  </ion-col>
+  <ion-col size="2"></ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-header>
+<ion-content>
+
+  <div class="circulo" style="position: absolute; top: -2%; left: -80%; box-shadow: 8px 13px 13px rgba(0, 0, 0, 0.4);">
+  </div>
+
+  <ion-grid style="margin-top: 20px;">
+    <ion-row>
+      <ion-col size=".5"></ion-col>
+      <ion-col>
+        <ion-input [(ngModel)]="cliente.nombre" class="input-text font500" type="text" placeholder=" Nombre y apellido" value="{{cliente.nombre}}"></ion-input>
+      </ion-col>
+      <ion-col size=".5"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size=".5"></ion-col>
+      <ion-col>
+        <ion-input [(ngModel)]="cliente.email" class="input-text font500" type="text" placeholder=" Correo electronico" value="{{cliente.email}}"></ion-input>
+      </ion-col>
+      <ion-col size=".5"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size=".5"></ion-col>
+      <ion-col>
+        <ion-input [(ngModel)]="cliente.sexo" class="input-text font500" type="text" placeholder=" Sexo" value="{{cliente.sexo}}"></ion-input>
+      </ion-col>
+      <ion-col size=".5"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size=".5"></ion-col>
+      <ion-col>
+        <ion-input [(ngModel)]="cliente.celular" class="input-text font500" type="number" placeholder=" Numero de celular" value="{{cliente.celular}}"></ion-input>
+      </ion-col>
+      <ion-col size=".5"></ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-card (click)="guardarUser()" class="register" style="height: 65px;">
+          <p class="font200" style="color: white; font-size: 25px; line-height: 14px;">Guardar</p>
+        </ion-card>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-card (click)="salir()" class="register" style="height: 65px;">
+          <p class="font200" style="color: white; font-size: 25px; line-height: 14px;">Cerrar sesion</p>
+        </ion-card>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

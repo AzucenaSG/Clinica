@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonaService } from 'src/app/services/persona.service';
 
 @Component({
   selector: 'app-tipo-persona',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TipoPersonaComponent  implements OnInit {
 
-  constructor() { }
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit() {}
+
+  crearPersonaYo(){
+    this.personaService.editPersonaYo();
+  }
 
 }

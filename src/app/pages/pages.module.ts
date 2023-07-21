@@ -14,6 +14,7 @@ import { RecomendacionesComponent } from './recomendaciones/recomendaciones.comp
 import { PagoComponent } from './pago/pago.component';
 import { ResultadosComponent } from './resultados/resultados.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -29,7 +30,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     RecomendacionesComponent,
     PagoComponent,
     ResultadosComponent,
-    PerfilComponent
+    PerfilComponent,
+    CheckoutComponent
   ],
   imports: [
     CommonModule,

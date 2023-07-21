@@ -28,13 +28,23 @@
 
 <ion-content>
 
-  <div class="outer-div" style="margin-top: 20px; width: 100%;">
+  <div *ngFor="let categoria of categorias">
+    <div class="outer-div" style="margin-top: 20px; width: 100%;">
+      <div style="text-align: center; width: 100%;">
+        <ion-card (click)="irAnalisis(categoria.id)" class="cardAzul" style="height: 100px; width: 95%;">
+          <p class="font300" style="color: white; font-size: 40px; line-height: 30px; margin-top: 24px;">{{categoria.nombre}}</p>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="outer-div" style="margin-top: 20px; width: 100%;">
     <div style="text-align: center; width: 100%;">
       <ion-card [routerLink]="['/producto']" class="cardAzul" style="height: 100px; width: 95%;">
         <p class="font300" style="color: white; font-size: 40px; line-height: 30px; margin-top: 24px;">Analisis de sangre</p>
       </ion-card>
     </div>
-  </div>
+  </div> -->
 
 </ion-content>
 

@@ -16,6 +16,7 @@ export class RegistroComponent  implements OnInit {
     celular: '',
     sexo: '',
     nombre: '',
+    edad: 0,
     contrasena: ''
   };
 
@@ -42,6 +43,7 @@ export class RegistroComponent  implements OnInit {
       celular: '',
       sexo: '',
       nombre: '',
+      edad: 0,
       contrasena: ''
     };
   }

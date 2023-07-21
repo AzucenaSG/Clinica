@@ -7,6 +7,7 @@ import { ConfigComponent } from './config/config.component';
 import { MenuAdminComponent } from './menu-admin/menu-admin.component';
 import { ComponentesModule } from '../componentes/componentes.module';
 import { AnalisisComponent } from './analisis/analisis.component';
+import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
 
 
 
@@ -14,7 +15,8 @@ import { AnalisisComponent } from './analisis/analisis.component';
   declarations: [
     ConfigComponent,
     MenuAdminComponent,
-    AnalisisComponent
+    AnalisisComponent,
+    PerfilAdminComponent
   ],
   imports: [
     CommonModule,

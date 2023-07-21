@@ -14,6 +14,8 @@ import { ResultadosComponent } from './pages/resultados/resultados.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { MenuAdminComponent } from './backend/menu-admin/menu-admin.component';
 import { AnalisisComponent } from './backend/analisis/analisis.component';
+import { PerfilAdminComponent } from './backend/perfil-admin/perfil-admin.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'perfil', component: PerfilComponent},
   { path: 'menuAdmin', component: MenuAdminComponent},
   { path: 'analisis', component: AnalisisComponent},
+  { path: 'perfilAdmin', component: PerfilAdminComponent},
+  { path: 'checkout', component: CheckoutComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {
