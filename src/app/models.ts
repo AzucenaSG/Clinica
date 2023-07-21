@@ -33,3 +33,17 @@ export interface Persona {
     edad: number;
     analisis: string;
 }
+
+export interface Cita{
+    id: string;
+    paciente: string;
+    tipo: string;
+    fecha: string;
+    fechasub: any;
+    pago: string;
+    analisis: string;
+    hora: string;
+    date: string;
+    textColor: string;
+    backgroundColor: string;
+  }

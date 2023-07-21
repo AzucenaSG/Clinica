@@ -15,6 +15,7 @@ import { PagoComponent } from './pago/pago.component';
 import { ResultadosComponent } from './resultados/resultados.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AgendaComponent } from './agenda/agenda.component';
 
 
 
@@ -31,7 +32,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     PagoComponent,
     ResultadosComponent,
     PerfilComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    AgendaComponent
   ],
   imports: [
     CommonModule,

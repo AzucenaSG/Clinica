@@ -16,6 +16,7 @@ import { MenuAdminComponent } from './backend/menu-admin/menu-admin.component';
 import { AnalisisComponent } from './backend/analisis/analisis.component';
 import { PerfilAdminComponent } from './backend/perfil-admin/perfil-admin.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { AgendaComponent } from './pages/agenda/agenda.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'analisis', component: AnalisisComponent},
   { path: 'perfilAdmin', component: PerfilAdminComponent},
   { path: 'checkout', component: CheckoutComponent},
+  { path: 'agenda', component: AgendaComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {
