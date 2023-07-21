@@ -24,7 +24,7 @@ export class PerfilComponent  implements OnInit {
   };
 
   suscriberUserInfo!: Subscription;
-  usuario = false;  
+  usuario = false;
   constructor(public firebaseauthService: FirebaseauthService,
               public firestoreService: FirestoreService,
               private navCtrl: NavController,
