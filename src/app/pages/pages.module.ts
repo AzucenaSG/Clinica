@@ -16,6 +16,7 @@ import { ResultadosComponent } from './resultados/resultados.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { ListCitasComponent } from './list-citas/list-citas.component';
 
 
 
@@ -33,7 +34,8 @@ import { AgendaComponent } from './agenda/agenda.component';
     ResultadosComponent,
     PerfilComponent,
     CheckoutComponent,
-    AgendaComponent
+    AgendaComponent,
+    ListCitasComponent
   ],
   imports: [
     CommonModule,

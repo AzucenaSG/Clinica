@@ -79,7 +79,7 @@ export class AgendaComponent  implements OnInit {
     async back(){
       // this.navController.navigateForward('/tipopago');
       if(this.costo === '0'){
-        this.navController.navigateForward('/pagos');
+        this.navController.navigateForward('/persona');
       }else{
         const alert = await this.alertController.create({
           cssClass: 'asdff',
@@ -96,7 +96,7 @@ export class AgendaComponent  implements OnInit {
             }, {
               text: 'Ok',
               handler: () => {
-                this.navController.navigateForward('/pagos');
+                this.navController.navigateForward('/persona');
               }
             }
           ]
@@ -127,8 +127,8 @@ export class AgendaComponent  implements OnInit {
         analisis: '',
         hora: '',
         date: '',
-        textColor: '#080000',
-        backgroundColor: '#ffffff',
+        textColor: '#ffffff',
+        backgroundColor: '#146C94',
       }
     }
   
@@ -194,7 +194,6 @@ export class AgendaComponent  implements OnInit {
         this.firestoreService.createDoc(this.cita,path,this.cita.hora).then( res => {
           console.log('guardado con exito');
           this.guardarmicita();
-          this.resetarcita();
           // this.navController.navigateForward('/micita');
         }).catch(   error => {
           console.log(error);
@@ -209,15 +208,34 @@ export class AgendaComponent  implements OnInit {
     guardarmicita(){
       const path = 'Clientes/' + this.cliente.uid + '/micita/';
         console.log('interface', this.cita);
-        this.firestoreService.createDoc(this.cita,path,this.cliente.uid).then( res => {
+        const newId = this.firestoreService.getId();
+        this.cita.id = newId;
+        this.firestoreService.createDoc(this.cita,path,this.cita.id).then( res => {
           console.log('guardado con exito');
           this.presentToast('cita agendada con exito','success','checkmark-outline');
+          this.guardarCitaAnalisis();
         }).catch(   error => {
           console.log(error);
           console.log('error al guardar');
           this.presentToast('error al guarda la cita','danger','close-outline');
         });
     }
+
+      // guardo la cita para los admin
+      guardarCitaAnalisis(){
+        const path = 'CitasAdmin/';
+          console.log('interface', this.cita);
+          this.firestoreService.createDoc(this.cita,path,this.cita.id).then( res => {
+            console.log('guardado con exito');
+            this.presentToast('cita agendada con exito','success','checkmark-outline');
+            this.resetarcita();
+            this.navController.navigateForward('/listCitas');
+          }).catch(   error => {
+            console.log(error);
+            console.log('error al guardar');
+            this.presentToast('error al guarda la cita','danger','close-outline');
+          });
+      }
     
     // hago una consulta a todas las horas de la fecha seleccionada y si esa hora tiene guardada una cita el boton de agendar lo desaparesco
     loadcitas(fecha: string){

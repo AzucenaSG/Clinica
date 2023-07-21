@@ -1,6 +1,6 @@
-// ion-content{
-//     --ion-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #0463FA;
-// }
+ion-content.gris{
+    --ion-background-color: #989aa2;
+}
 
 ion-content.a{
     --ion-background-color:  #5d7aaa00;
@@ -40,7 +40,7 @@ ion-header{
 //   }
 
 ion-modal {
-    --border-radius: 20px;
+    --border-radius: 45px;
     --width: 95%;
 }
 
@@ -60,7 +60,12 @@ ion-modal {
 }
 
 .fg{
-    background: #055dea
+    border-radius: 45px;
+    background: #989aa2;
+    border-top: 2px solid #146C94;
+    border-left: 2px solid #146C94;
+    border-right: 2px solid #146C94;
+    border-bottom: 2px solid #146C94;
 }
   
 ion-item {

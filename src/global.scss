@@ -25,6 +25,12 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+ion-datetime {
+    --background: white;
+    --background-rgb: 255, 241, 242;
+  
+    border-radius: 16px;
+  }
 
 .outer-div {
     display: flex; /* establece el contenedor como flexible */
@@ -73,4 +79,8 @@
 
 .cBlanco{
     color: #ffffff;
+}
+
+.cAzul3{
+    color:#146C94;
 }

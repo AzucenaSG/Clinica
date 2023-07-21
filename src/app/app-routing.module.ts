@@ -17,6 +17,7 @@ import { AnalisisComponent } from './backend/analisis/analisis.component';
 import { PerfilAdminComponent } from './backend/perfil-admin/perfil-admin.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { AgendaComponent } from './pages/agenda/agenda.component';
+import { ListCitasComponent } from './pages/list-citas/list-citas.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'perfilAdmin', component: PerfilAdminComponent},
   { path: 'checkout', component: CheckoutComponent},
   { path: 'agenda', component: AgendaComponent},
+  { path: 'listCitas', component: ListCitasComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {
