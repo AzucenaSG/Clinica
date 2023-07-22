@@ -18,6 +18,7 @@ import { PerfilAdminComponent } from './backend/perfil-admin/perfil-admin.compon
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { AgendaComponent } from './pages/agenda/agenda.component';
 import { ListCitasComponent } from './pages/list-citas/list-citas.component';
+import { QrComponent } from './backend/qr/qr.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent},
   { path: 'agenda', component: AgendaComponent},
   { path: 'listCitas', component: ListCitasComponent},
+  { path: 'qr', component: QrComponent},
   { path: '', component: LoginComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full'},
   {

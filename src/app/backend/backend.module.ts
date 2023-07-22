@@ -8,6 +8,7 @@ import { MenuAdminComponent } from './menu-admin/menu-admin.component';
 import { ComponentesModule } from '../componentes/componentes.module';
 import { AnalisisComponent } from './analisis/analisis.component';
 import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
+import { QrComponent } from './qr/qr.component';
 
 
 
@@ -16,7 +17,8 @@ import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
     ConfigComponent,
     MenuAdminComponent,
     AnalisisComponent,
-    PerfilAdminComponent
+    PerfilAdminComponent,
+    QrComponent
   ],
   imports: [
     CommonModule,
