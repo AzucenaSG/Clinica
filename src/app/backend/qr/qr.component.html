@@ -1,24 +1,54 @@
-<ion-header>
-  <ion-toolbar>
-          <ion-title class="titulo ion-text-wrap t">
-            Quick QR PRO
-          </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-header class="centrado ion-no-border">
+  <ion-grid>
+    <ion-row>
+  <ion-col size="2">
+    <svg [routerLink]="['/menuAdmin']" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-left-short cAzul1" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+    </svg>
+  </ion-col>
+  <ion-col>
+   
+  </ion-col>
+  <ion-col size="2">
+    <div class="circulo" style="position: absolute; top: -5%; right: -170%; box-shadow: 0px 13px 13px rgba(0, 0, 0, 0.25);">
+    </div>
+  </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div style="text-align: center;">
+    <ion-label class="titul font500">Datos de la cita</ion-label>
+  </div>
+  </ion-header>
 
 <ion-content [fullscreen]="true"
 [style.--background]="scanActive?'#00000000':'#ffffff'">
 
-  <ion-button expand="block" shape="round" (click)="startScanner()" [hidden]="scanActive">scanear</ion-button>
+<div *ngIf="datos">
+  <div class="outer-div" style="margin-top: 20px; width: 100%;">
+    <div style="text-align: center; width: 100%;">
+      <ion-card class="cardAzul2" style="height: 20%; width: 95%;">
+        <p class="font300" style="color: black; font-size: 22px; line-height: 5px; margin-top: 24px;">Cita el dia {{cita.fechasub}}</p>
+        <p class="font" style="color: black; font-size: 22px; line-height: 15px; margin-top: 24px; font-weight: bolder;">A las {{cita.hora}} hrs.</p>
+        <ion-label class="font300" style="color: black; font-size: 22px; line-height: 40px; margin-top: 24px; margin-left: 22px;">{{cita.paciente}}</ion-label><br>
+        <ion-label class="font300" style="color: black; font-size: 22px; line-height: 30px; margin-top: 24px; margin-left: 22px;">Tipo de analisis: {{cita.analisis}}</ion-label>
+      </ion-card>
+    </div>
+  </div>
 
-
+ 
+  <ion-button (click)="startScanner()" shape="round" expand="block" color="tertiary">volver a escanear</ion-button> 
+</div>
 </ion-content>
 
+
+
 <ion-footer class="centrado ion-no-border" style="text-align: center;">
+  <div class="circulo2" style="position: absolute; top: 3%; left: -40%; box-shadow: 8px 13px 13px rgba(0, 0, 0, 0.4);">
+  </div>
   <ion-grid *ngIf="scanActive">
     <ion-row class="scan-button" [hidden]="!scanActive">
       <ion-col class="ion-no-padding">
-        <ion-button expand="full" (click)="stopScanner()">CANCELAR</ion-button>
+        <ion-button shape="round" color="tertiary" (click)="stopScanner()">CANCELAR</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
