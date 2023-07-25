@@ -26,6 +26,9 @@ export class PagoComponent  implements OnInit {
     date: '',
     textColor: '',
     backgroundColor: '',
+    iduser: '',
+    file: '',
+    edad: 0
   };
 
   url: any

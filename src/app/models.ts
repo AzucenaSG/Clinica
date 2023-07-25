@@ -46,4 +46,7 @@ export interface Cita{
     date: string;
     textColor: string;
     backgroundColor: string;
+    iduser: string;
+    file: string;
+    edad: number;
   }

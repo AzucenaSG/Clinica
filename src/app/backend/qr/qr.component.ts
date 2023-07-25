@@ -26,6 +26,9 @@ export class QrComponent  implements OnInit {
     date: '',
     textColor: '',
     backgroundColor: '',
+    iduser: '',
+    file: '',
+    edad: 0
   };
   datos = false;
   loco = '';

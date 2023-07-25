@@ -129,6 +129,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#ffffff',
         backgroundColor: '#146C94',
+        iduser: '',
+        file: '',
+        edad: 0
       }
     }
   
@@ -156,6 +159,8 @@ export class AgendaComponent  implements OnInit {
       this.cita.id =  this.cita.fechasub;
       this.cita.paciente = this.personaService.persona.nombre;
       this.cita.analisis = this.personaService.persona.analisis;
+      this.cita.iduser = this.personaService.persona.id;
+      this.cita.edad = this.personaService.persona.edad;
       this.cita.date = this.cita.fechasub;
       console.log('this.cita',this.cita);
     }
@@ -251,6 +256,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       console.log('lafecha  que se recibe es', fecha)
       const path9 = 'citas/' + fecha + '/horas/';
@@ -276,6 +284,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path10 = 'citas/' + fecha + '/horas/';
       console.log('path10', path10);
@@ -300,6 +311,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path11 = 'citas/' + fecha + '/horas/';
       console.log('path11', path11);
@@ -324,6 +338,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path12 = 'citas/' + fecha + '/horas/';
       console.log('path12', path12);
@@ -348,6 +365,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path13 = 'citas/' + fecha + '/horas/';
       console.log('path13', path13);
@@ -372,6 +392,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path14 = 'citas/' + fecha+ '/horas/';
       console.log('path14', path14);
@@ -396,6 +419,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path15 = 'citas/' + fecha + '/horas/';
       console.log('path15', path15);
@@ -420,6 +446,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path16 = 'citas/' + fecha + '/horas/';
       console.log('path16', path16);
@@ -444,6 +473,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path17 = 'citas/' + fecha + '/horas/';
       console.log('path17', path17);
@@ -468,6 +500,9 @@ export class AgendaComponent  implements OnInit {
         date: '',
         textColor: '#800080',
         backgroundColor: '#ffc0cb',
+        iduser: '',
+        file: '',
+        edad: 0
       };
       const path18 = 'citas/' + fecha + '/horas/';
       console.log('path18', path18);

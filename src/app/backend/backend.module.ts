@@ -9,6 +9,7 @@ import { ComponentesModule } from '../componentes/componentes.module';
 import { AnalisisComponent } from './analisis/analisis.component';
 import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
 import { QrComponent } from './qr/qr.component';
+import { CitasComponent } from './citas/citas.component';
 
 
 
@@ -18,7 +19,8 @@ import { QrComponent } from './qr/qr.component';
     MenuAdminComponent,
     AnalisisComponent,
     PerfilAdminComponent,
-    QrComponent
+    QrComponent,
+    CitasComponent
   ],
   imports: [
     CommonModule,

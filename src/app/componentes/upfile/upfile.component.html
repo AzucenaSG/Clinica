@@ -1,0 +1,55 @@
+<div>
+  <ion-item (click)="verDatos()">
+    <ion-label class="titul">{{cita.paciente}}</ion-label>
+  </ion-item>
+  <div *ngIf="datos">
+    <p style="font-size: 15px; color: gray; line-height: 0px;">Nommbre y apellido</p>
+    <div style="border-top: 2px solid #146C94;
+    border-left: 2px solid #146C94;
+    border-right: 2px solid #146C94;
+    border-bottom: 2px solid #146C94;
+    border-radius: 20px;">
+      <p style="font-size: 20px; font-weight: bolder; line-height: 0px; margin-left: 5px;">{{cita.paciente}}</p>
+    </div>
+
+    <p style="font-size: 15px; color: gray; line-height: 0px;">Edad</p>
+    <div style="border-top: 2px solid #146C94;
+    border-left: 2px solid #146C94;
+    border-right: 2px solid #146C94;
+    border-bottom: 2px solid #146C94;
+    border-radius: 20px;">
+      <p style="font-size: 20px; font-weight: bolder; line-height: 0px; margin-left: 5px;">{{cita.edad}}</p>
+    </div>
+
+    <p style="font-size: 15px; color: gray; line-height: 0px;">Tipo analiis</p>
+    <div style="border-top: 2px solid #146C94;
+    border-left: 2px solid #146C94;
+    border-right: 2px solid #146C94;
+    border-bottom: 2px solid #146C94;
+    border-radius: 20px;">
+      <p style="font-size: 20px; font-weight: bolder; line-height: 0px; margin-left: 5px;">{{cita.analisis}}</p>
+    </div>
+
+    <div *ngIf="archivo" style="text-align: center;">
+      <ion-label class="titul">Archivo cargado</ion-label>
+    </div>
+
+    <ion-item lines="none">
+    <ion-buttons slot="start">
+    <ion-button mode="ios" fill="outline" shape="round" color="tertiary">
+    <label for="file-upload">
+      Cargar resultados 
+    </label>
+     <input (change)="newImageUploadProductos($event)" id="file-upload" style="display: none" type="file" required="true">
+    </ion-button>
+    </ion-buttons>
+    
+    <ion-button (click)="subirArcivo()" slot="end" mode="ios" shape="round" color="tertiary">
+      <label>
+        Enviar resultados 
+      </label>
+    </ion-button>
+    </ion-item>
+
+  </div>
+</div>
