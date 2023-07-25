@@ -2,7 +2,7 @@
   <ion-grid>
     <ion-row>
   <ion-col size="2">
-    <svg [routerLink]="['/persona']" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-left-short cAzul1" viewBox="0 0 16 16">
+    <svg (click)="back()" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-left-short cAzul1" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
     </svg>
   </ion-col>
@@ -29,7 +29,7 @@
 
   <div class="outer-div" style="margin-top: 20px; width: 100%;">
     <div style="text-align: center; width: 100%;">
-      <ion-card [routerLink]="['/personaExterna']" class="cardAzul" style="height: 140px; width: 95%;">
+      <ion-card (click)="descargar()" class="cardAzul" style="height: 140px; width: 95%;">
         <p class="font300" style="color: white; font-size: 40px; line-height: 15px; margin-top: 38px;">Descargar</p>
         <p class="font300" style="color: white; font-size: 40px; line-height: 4px;">resultados</p>
       </ion-card>
@@ -41,6 +41,12 @@
       <img style="height: 180px;"  src="assets/imgs/microscopi.png" >
     </div>
   </div>
+
+  <a [href]="cita.file" download>Descargar PDF</a>
+
+  <ion-button (click)="descarga()">descargar</ion-button>
+  <ion-button (click)="descarga2()">descargar2</ion-button>
+  <ion-button (click)="descarga3()">descargar3</ion-button>
 </ion-content>
 
 <ion-footer class="ion-no-border">

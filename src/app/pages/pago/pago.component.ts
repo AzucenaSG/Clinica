@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Cita } from 'src/app/models';
 import { FirebaseauthService } from 'src/app/services/firebaseauth.service';
 import { FirestoreService } from 'src/app/services/firestore.service';
@@ -37,7 +37,8 @@ export class PagoComponent  implements OnInit {
   constructor(private route: ActivatedRoute,
     public firebaseauthService: FirebaseauthService,
     public firestoreService: FirestoreService,
-    private sanitizer: DomSanitizer) { }
+    private sanitizer: DomSanitizer,
+    private router: Router) { }
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.getAll('id').toString();
@@ -71,6 +72,10 @@ export class PagoComponent  implements OnInit {
       this.url = data;
       this.sanitizedSvg = this.sanitizer.bypassSecurityTrustHtml(this.url);
     });
+  }
+
+  irResultados(){
+    this.router.navigate(['resultados',{ id: [`${this.id}`]}]);
   }
 
 }
