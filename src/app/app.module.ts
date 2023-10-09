@@ -7,8 +7,6 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { PagesModule } from './pages/pages.module';
-import { BackendModule } from './backend/backend.module';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
@@ -20,8 +18,6 @@ import { environment } from 'src/environments/environment';
   declarations: [AppComponent],
   imports: [BrowserModule,
     IonicModule.forRoot(),
-    PagesModule,
-    BackendModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,
     AngularFireAuthModule,

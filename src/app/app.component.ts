@@ -30,7 +30,7 @@ export class AppComponent {
               }else{
                 this.admin = false;
                 this.usuario = true;
-                this.navController.navigateForward('/home');
+                this.navController.navigateForward('/inicio');
               }
 
           } else {
