@@ -25,62 +25,43 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-ion-datetime {
-    --background: white;
-    --background-rgb: 255, 241, 242;
-  
-    border-radius: 16px;
+ion-content{
+    font-family: 'Poppins', sans-serif !important;
+
+}
+
+body {
+    background-color: #054C9C; /* Cambia 'white' al color deseado */
   }
 
-.outer-div {
-    display: flex; /* establece el contenedor como flexible */
-    justify-content: center; /* centra horizontalmente el contenido del contenedor */
-    align-items: center; /* centra verticalmente el contenido del contenedor */
+  .labeltransparente{
+    color: transparent;
+    font-size: 16px;
+  }
+
+ion-content{
+    --ion-background-color: #054C9C;
 }
 
-.font{
-    font-family: 'Inter', sans-serif !important;
-}
 
-.font200{
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 200;
-}
-
-.font300{
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 300;
-}
-
-.font400{
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 400;
-}
-.font500{
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 400;
-}
-
-.BAzul1{
-    background-color: #146C94;
-}
-
-.BAzul2{
-    background-color: #19A7CE;
-}
-
-.cAzul1{
-    color:#146C94;
-}
-
-.cAzul2{
-    color:#19A7CE;
-}
-
-.cBlanco{
-    color: #ffffff;
-}
-
-.cAzul3{
-    color:#146C94;
-}
+:root {
+    --ion-color-rose: #054C9C;
+    --ion-color-rose-rgb: 254, 205, 211;
+    --ion-color-rose-contrast: #000000;
+    --ion-color-rose-contrast-rgb: 0, 0, 0;
+    --ion-color-rose-shade: #054C9C;
+    --ion-color-rose-tint: #054C9C;
+  }
+  
+  .ion-color-rose {
+    --ion-color-base: var(--ion-color-rose);
+    --ion-color-base-rgb: var(--ion-color-rose-rgb);
+    --ion-color-contrast: var(--ion-color-rose-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-rose-contrast-rgb);
+    --ion-color-shade: var(--ion-color-rose-shade);
+    --ion-color-tint: var(--ion-color-rose-tint);
+  }
+  
+  div[slot='content'] {
+    background: rgba(var(--ion-color-rose-rgb), 0.25);
+  }
