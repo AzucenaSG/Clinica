@@ -87,6 +87,7 @@ export class PersonaService {
       nombre: nombre,
       edad: edad,
       analisis: ''
+      
      }
      console.log('persona ext',this.persona);
   }
