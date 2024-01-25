@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FirebaseauthService } from './services/firebaseauth.service';
 import { NavController } from '@ionic/angular';
-import { PersonaService } from './services/persona.service';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +12,7 @@ export class AppComponent {
   usuario = false;
   idUsuario = '';
   constructor(private firebaseauthService: FirebaseauthService,
-              private navController: NavController,
-              private personaService: PersonaService) {
+              private navController: NavController) {
     this.getUid();
   }
 
@@ -23,19 +21,19 @@ export class AppComponent {
     this.firebaseauthService.stateAuth().subscribe( res => {
           if (res !== null) {
             this.idUsuario = res.uid;
-              if (this.idUsuario === '0p97jkz59RPRM4Ok8hvGu2d1NN22')  {
+              if (this.idUsuario === 'g3gkGXGlAeTVwC6FQVyanU4VRrJ2')  {
                   this.admin = true;
                   this.usuario = false;
-                  this.navController.navigateForward('/menuAdmin');
+                  this.navController.navigateForward('/agenda-admin');
               }else{
                 this.admin = false;
                 this.usuario = true;
-                this.navController.navigateForward('/inicio');
+                this.navController.navigateForward('/menu');
               }
 
           } else {
             this.admin = false;
-            this.usuario = true;
+            this.usuario = false;
             this.navController.navigateForward('/login');
           }
     });

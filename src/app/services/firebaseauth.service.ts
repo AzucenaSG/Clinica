@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { Cliente } from '../models';
 import { FirestoreService } from './firestore.service';
 import { NavController } from '@ionic/angular';
+import { Cliente } from '../models';
 
 @Injectable({
   providedIn: 'root'

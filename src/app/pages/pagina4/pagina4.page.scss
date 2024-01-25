@@ -1,0 +1,93 @@
+ion-title{
+    font-size: 35px;
+    color: #034f81;
+    text-align: center;
+}
+ion-icon{
+    width: 60px;
+    height: 60px;
+    color: #034f81;
+    margin-top: 20%;
+    margin-right: 2%;
+}
+ion-button{
+    color: #ffffff;
+    --background: #19a7ce;
+    border-radius: 50px;
+    text-transform: none;
+    height: 90px;
+    font-size: 25px !important;
+}
+ion-img{
+    max-width: 130%; 
+    height: 130px;
+}
+ion-content {
+    position: relative;
+}
+.superpuesto {
+    position: absolute;
+}
+.circle-container {
+    overflow: hidden;
+    position: absolute; 
+    width: 500px;
+    height: 500px;
+  }
+.circle{
+    width: 270px; 
+    height: 270px; 
+    background-color: #033e66; 
+    border-radius: 200px;
+    margin-right: 90px;
+    margin-top: .2px;
+    position: relative;
+  }
+  @media (max-width: 2000px) and (min-width: 1338px){
+.circle{
+      width: 270px; 
+      height: 270px; 
+      background-color: #033e66; 
+      border-radius: 200px;
+      margin-left: 40%;
+      margin-top: .2px;
+      position: relative;
+    }
+    .footer{
+        margin: 0%;
+    }
+    ion-button{
+        font-size: 30px !important;
+    }
+  
+}
+.circle2{
+    width: 300px; 
+    height: 300px; 
+    background-color: #033e66; 
+    border-radius: 200px;
+    margin-left: -130px;
+    margin-top: -10px;
+    position: relative;
+  }
+// .conten{
+//     overflow: hidden;
+//     position: absolute; 
+//     width: 50px;
+//     height: 50px;
+    
+// }
+ion-footer{
+    box-shadow: none;
+    border: none;
+    position: relative;
+    height: 10%;
+    background-color: #ffffff;
+}
+  ion-header{
+    position: relative;
+    background-color: #ffffff;
+    height: 20%;
+    box-shadow: none;
+    border: none;
+}

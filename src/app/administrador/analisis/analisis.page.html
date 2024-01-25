@@ -1,0 +1,115 @@
+<ion-header class="header"> 
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="1.3">
+       <ion-icon name="arrow-back-outline" (click)="redirigir()"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-title style="text-align: center;"><br>Analisis</ion-title>
+      </ion-col>
+      <ion-col size="1.1">
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="1.3"></ion-col>
+      <ion-col style="text-align: center;" size="9.6">
+        <ion-icon class="icono2" name="add" (click)="setOpen(true)" expand="block"></ion-icon>
+      </ion-col>
+      <ion-col size="1.1">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-header>
+
+<ion-content>
+  <div #page>
+<div *ngFor=" let item of preciosres">
+  <ion-item-sliding>
+  <ion-item class="contenido" (click)="ingresar(item)">
+    <ion-label class="datosimportantes">{{item.nombre}}</ion-label>
+    <ion-chip class="chip" slot="end"> ${{item.precios}}</ion-chip>
+  </ion-item>
+</ion-item-sliding>
+</div>
+
+  <ion-modal [isOpen]="isModalOpen"  
+  [canDismiss]="canDismiss" 
+  [presentingElement]="page">
+    <ng-template>
+      <ion-header style="height: 230px;">
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="1.3">
+             <ion-icon name="arrow-back-outline" (click)="closmodal()"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-title style="text-align: center;"><br>Agregar <br>analisis</ion-title>
+            </ion-col>
+            <ion-col size="1.1">
+              <div class="circle-container">
+                <div class="circle"></div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-header>
+
+      <ion-content class="ion-padding">
+        <ion-item>
+          <ion-label class="datos">Nombre:</ion-label>
+          <ion-input 
+                    shape="round"
+                    [(ngModel)]="precio.nombre"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required></ion-input>
+        </ion-item>
+        <ion-item style="height: 90px;">
+          <ion-label class="datos">Precio: $</ion-label>
+          <ion-input type="number"
+                    shape="round"
+                    [(ngModel)]="precio.precios"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required></ion-input>
+        </ion-item>
+
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="1"></ion-col>
+            <ion-col size="10">
+              <ion-button class="boton" shape="round" type="submit" expand="block" (click)="guardar()">
+                Guardar
+              </ion-button>
+            </ion-col>
+            <ion-col size="1">
+              
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</div>
+</ion-content>
+
+<ion-footer>
+  <ion-grid fixed class="footer">
+  <ion-row>
+
+    <ion-col>
+      <div class="content">
+        <div class="circle2"></div>
+      </div>
+    </ion-col>
+    
+  </ion-row>
+  </ion-grid>
+</ion-footer>

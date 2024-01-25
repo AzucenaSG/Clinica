@@ -1,0 +1,85 @@
+<ion-header class="encabezado">
+  
+  <ion-grid fixed>
+    <ion-row style="height: 180px;">
+      <ion-col size="1.3">
+       <ion-icon  name="arrow-back-outline" (click)="redirigir()"></ion-icon>
+
+      </ion-col>
+      <ion-col size="9.6">
+        <ion-title style="text-align: center;"><br>Elige una de las <br>2 opciones</ion-title>
+      </ion-col>
+      <ion-col size="1.1">
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid fixed >
+    <ion-row>
+      <ion-col size=".1" size-lg="3"></ion-col>
+      <ion-col size="11.8" size-lg="6">
+        <ion-button (click)="personal()" shape="round" type="submit" expand="block">
+          <ion-label>Para Mi</ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col size=".1" size-lg="3">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed size-lg="12">
+    <ion-row>
+      <ion-col size=".1" size-lg="3"></ion-col>
+      <ion-col size="11.8" size-lg="6">
+        <ion-button (click)="alguienmas()" shape="round" type="submit" expand="block">
+          Para otra <br>persona
+        </ion-button>
+      </ion-col>
+      <ion-col size=".1" size-lg="3">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+<ion-split-pane when="md" contentId="main" when="xl">
+
+    <ion-menu side="start" menuId="first" contentId="main" >
+      
+      <ion-content>
+  
+  
+      </ion-content>
+    </ion-menu>
+  
+  </ion-split-pane>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid fixed>
+      <ion-row >
+        <ion-col >
+          <div class="content">
+            <div class="circle2"></div>
+          </div>
+        </ion-col>
+        <ion-col size=".5">
+          
+        </ion-col>
+        <ion-col size="5.5">
+          <ion-img class="img" src="/assets/imgs/huma.png"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

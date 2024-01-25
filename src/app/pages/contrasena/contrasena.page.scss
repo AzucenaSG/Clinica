@@ -1,0 +1,103 @@
+ion-title{
+    margin-top: 5px;
+    font-size: 40px;
+    color: #034f81; 
+    text-align: center;
+    margin-top: 20px;      
+}
+ion-icon{
+    width: 60px;
+    height: 60px;
+    color: #034f81;
+}
+ion-content {
+    z-index: 1;
+  }
+  .circle-container {
+    overflow: hidden;
+    position: absolute; 
+    width: 500px;
+    height: 500px;
+  }
+  .circle{
+    width: 270px; 
+    height: 270px; 
+    background-color: #033e66; 
+    border-radius: 200px;
+    margin-right: 90px;
+    margin-top: .2px;
+    position: relative;
+  }
+  .circle2{
+    width: 300px; 
+    height: 300px; 
+    background-color: #033e66; 
+    border-radius: 200px;
+    margin-left: -120px;
+    margin-top: 10px;
+    position: relative;
+  }
+  h2{
+    margin-left: 20px;
+  }
+  h3{
+    margin-left: 20px;
+    color: #034f81;
+  }
+  ion-img{
+    width: 400px;
+    height: 400px;
+  }
+  @media (max-width: 2000px) and (min-width: 1338px){
+    .circle-container {
+        overflow: hidden;
+        position: absolute; 
+        width: 500px;
+        height: 500px;
+      }
+      .circle{
+        width: 270px; 
+        height: 270px; 
+        background-color: #033e66; 
+        border-radius: 200px;
+        margin-left: 100px;
+        margin-top: -1px;
+        position: relative;
+      }
+      .circle2{
+        width: 300px; 
+        height: 300px; 
+        background-color: #033e66; 
+        border-radius: 200px;
+        margin-left: -110px;
+        margin-top: 20px;
+        position: relative;
+      }
+      .conten{
+        overflow: hidden;
+        position: absolute; 
+        width: 500px;
+        height: 500px;
+        
+      }
+      ion-footer{
+        margin: 0%;
+      }
+      ion-img{
+        width: 350px;
+        height: 350px;
+      }
+  }
+  ion-footer{
+    box-shadow: none;
+    border: none;
+    position: relative;
+    height: 18%;
+  }
+  ion-header{
+    position: relative;
+    background-color: #ffffff;
+    height: 18%;
+    box-shadow: none;
+    border: none;
+  }

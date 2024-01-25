@@ -1,0 +1,78 @@
+<ion-header class="encabezado" >
+  
+  <ion-grid fixed>
+    <ion-row >
+      <ion-col size="1.3">
+       <ion-icon name="arrow-back-outline" (click)="redirigir()"></ion-icon>
+
+      </ion-col>
+      <ion-col size="9.6">
+        <ion-title style="text-align: center;"><br>Resultados</ion-title>
+      </ion-col>
+      <ion-col size="1.1">
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+</ion-header>
+
+
+<ion-content>
+
+  <div *ngFor="let item of citasres; let i = index">
+    <ion-item (click)="toggleContenido(i, item)">
+      <ion-label>{{item.tipoanalisis}}</ion-label>
+    </ion-item>
+    <div *ngIf="selectedItemIndex === i && contenidoVisible">
+      <ion-button (click)="descargar(item.File, item.id)" expand="block" fill="clear" shape="round">
+        Descargar
+      </ion-button>
+    </div>
+  </div>
+
+  <ion-grid fixed>
+    <ion-row >
+      <ion-col size="5.5"></ion-col>
+      <ion-col size="1">
+        <ion-icon name="arrow-down"></ion-icon>
+      </ion-col>
+      <ion-col size="5.5">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col size="">
+        <ion-img src="/assets/imgs/microscopi.png"></ion-img>
+      </ion-col>
+      <ion-col size="2">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
+
+<ion-footer>
+    <ion-grid fixed class="footer">
+      <ion-row >
+        <ion-col >
+          <div class="content">
+            <div class="circle2"></div>
+          </div>
+        </ion-col>
+        <ion-col size=".5">
+          
+        </ion-col>
+        <ion-col size="5.5">
+          
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

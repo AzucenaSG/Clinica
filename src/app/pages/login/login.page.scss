@@ -1,0 +1,141 @@
+ion-label{
+    font-size: 50px;
+    color: #19a7ce;
+}
+.bienvenido{
+    font-size: 38px;
+    color: #19a7ce;
+    display: flex;
+    justify-content: center;
+}
+ion-button{
+    --background: #033e66;
+    width: 180px;
+    height: 50px;
+    text-transform: none !important;
+    font-size: 25px;
+    display: contents;
+    
+}
+ion-content {
+    z-index: 1;
+}
+.img{
+    width: 350px;
+    height: 330px;
+    // margin:auto;
+    // display:flex
+    margin-top: -14%;
+
+}
+ion-input{
+    color: #ffffff;
+    background-color: #19a7ce;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 40px;
+}
+.olvide{
+    color: #000000!important;
+
+}
+ion-footer{
+    box-shadow: none;
+    border: none;
+    position: relative;
+    height: 9%;
+}
+.circle2{
+    width: 300px; 
+    height: 300px; 
+    background-color: #033e66; 
+    border-radius: 200px;
+    margin-left: -180px;
+    margin-top: 0px;
+    position: relative;
+}
+.conten{
+    overflow: hidden;
+    position: absolute; 
+    width: 50px;
+    height: 50px;
+    
+}
+.circle-container {
+    overflow: hidden;
+    position: absolute; 
+    width: 1200px;
+    height: 160px;
+}
+  .circle{
+    width: 270px; 
+    height: 270px; 
+    background-color: #033e66; 
+    border-radius: 200px;
+    margin-left: 9px;
+    margin-top: -115px;
+    position: fixed;
+}
+ 
+@media (max-width: 3001px) and (min-width: 1000px){
+    .circle{
+      width: 270px; 
+      height: 270px; 
+      background-color: #033e66; 
+      border-radius: 200px;
+      margin-left: 14%;
+      margin-top: -80px;
+      position: relative;
+    }
+    .circle-container {
+        overflow: hidden;
+        position: absolute; 
+        width: 1200px;
+        height: 190px;}
+
+    .correo{
+        margin-bottom: 0px;
+        
+    }
+    .bienvenido{
+        font-size: 50px;
+        color: #19a7ce;
+        display: flex;
+        justify-content: center;
+    }
+    ion-button{
+        --background: #033e66;
+        width: 180px;
+        height: 50px;
+        text-transform: none !important;
+        font-size: 25px;
+        display: contents;   
+    }
+    .img{
+        width: 0px;
+        height: 0px;
+        margin:auto;
+        display:flex;
+        color: transparent;
+    }
+    .divider{
+        margin-top: -15%;
+        margin-left: 25%;
+    }
+}
+ion-header{
+    position: relative;
+    background-color: #ffffff;
+    height: 4%;
+    box-shadow: none;
+    border: none;
+}
+ion-split-pane {
+       --side-width: 33%;
+       --side-max-width: 100%;
+       --border: 1px dashed transparent;
+      
+       
+       margin-left: 20%;
+       margin-top: 15%;
+}

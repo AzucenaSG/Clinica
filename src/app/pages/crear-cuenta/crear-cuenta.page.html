@@ -1,0 +1,165 @@
+<ion-header>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon name="arrow-back-outline" (click)="redirigir()"></ion-icon>  
+      </ion-col>
+      <ion-col>
+        <ion-title style="text-align: center;"><br>Datos <br>personales</ion-title>
+      </ion-col>
+      <ion-col size="2">    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-header>
+
+<ion-content>
+  
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size=".5" size-lg="3"></ion-col>
+      <ion-col size="11" size-lg="6">
+          <ion-input class="ion-padding"
+                    shape="round"
+                    color="light"
+                    mode="ios" 
+                    placeholder="Nombre y apellido"
+                    [(ngModel)]="cliente.nombre"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required></ion-input>
+      </ion-col>
+      <ion-col size=".5" size-lg="3">
+        
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed >
+    <ion-row>
+      <ion-col size=".5" size-lg="3"></ion-col>
+      <ion-col size="11" size-lg="6">
+          <ion-input type="email"
+                    helperText="Correo valido"
+                    errorText="correo invalido"
+                    class="ion-padding"
+                    shape="round"
+                    color="light"
+                    mode="ios" 
+                    placeholder="Correo electronico"
+                    [(ngModel)]="cliente.email"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required></ion-input>
+      </ion-col>
+      <ion-col size=".5" size-lg="3">
+        
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size=".5" size-lg="3"></ion-col>
+      <ion-col size="11" size-lg="6">
+          <ion-input type="password"
+                    [counter]="true"
+                    maxlength="8"
+                    [counterFormatter]="customCounterFormatter"
+                    class="ion-padding"
+                    shape="round"
+                    color="light"
+                    mode="ios" 
+                    placeholder="Contraseña"
+                    [(ngModel)]="cliente.password"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required></ion-input>
+          
+      </ion-col>
+      <ion-col size=".5" size-lg="3">
+        
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size=".5" size-lg="3"></ion-col>
+      <ion-col size="11" size-lg="6">
+          <ion-input 
+                    shape="round"
+                    class="ion-padding"
+                    color="light"
+                    mode="ios" 
+                    placeholder="Sexo"
+                    [(ngModel)]="cliente.genero"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required></ion-input>
+      </ion-col>
+      <ion-col size=".5" size-lg="3">
+        
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed>
+    <ion-row >
+      <ion-col size=".5" size-lg="3"></ion-col>
+      <ion-col size="11" size-lg="6">
+          <ion-input type="tel"
+                    class="ion-padding"
+                    shape="round"
+                    color="light"
+                    mode="ios" 
+                    placeholder="Numero de celular"
+                    [(ngModel)]="cliente.tel"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required> </ion-input>
+      </ion-col>
+      <ion-col size=".5" size-lg="3">
+        
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-toast
+    [isOpen]="isToastOpen"
+    message="Se ha registrado correctamente"
+    [duration]="5000"
+    (didDismiss)="crearcuenta(false)"
+  ></ion-toast>
+
+  <ion-toast
+  [isOpen]="isToastOpen2"
+  message="Favor de llenar los campos correctamente"
+  [duration]="5000"
+  (didDismiss)="crearcuenta(false)"
+></ion-toast>
+ 
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="1.5" size-lg="4"></ion-col>
+        <ion-col size="9" size-lg="4">
+          <ion-button (click)="crearcuenta(true)" shape="round" type="submit" expand="block">
+            Crear cuenta
+          </ion-button>
+        </ion-col>
+        <ion-col size="1.5" size-lg="4">
+          
+        </ion-col>
+      </ion-row>
+    </ion-grid> 
+    
+  </ion-toolbar>
+</ion-footer>

@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyCZUr63nUuR4sP4inkpCrzwQ3lz4ASNL84",
-    authDomain: "easis-demo-analisis.firebaseapp.com",
-    projectId: "easis-demo-analisis",
-    storageBucket: "easis-demo-analisis.appspot.com",
-    messagingSenderId: "891520708341",
-    appId: "1:891520708341:web:e9dc7f4b8970f1a57edfbc",
-    measurementId: "G-WSYGXT74N2"
+    apiKey: "AIzaSyDB0Ri3mne2YXIvRMsHOb6agO7NuoYgysU",
+    authDomain: "faugetanalisis.firebaseapp.com",
+    projectId: "faugetanalisis",
+    storageBucket: "faugetanalisis.appspot.com",
+    messagingSenderId: "445750663190",
+    appId: "1:445750663190:web:aa1bbb550992913d5ffd37",
+    measurementId: "G-HGTMZ6LM94"
   }
 };
 

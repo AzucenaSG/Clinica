@@ -1,52 +1,40 @@
 export interface Cliente {
     uid: string;
-    email: string;
-    celular: string;
-    sexo: string;
     nombre: string;
-    edad: number;
-    contrasena: string;
+    email: string;
+    password: string;
+    genero: string;
+    tel: number;
 }
-
 export interface Categoria {
     id: string;
-    nombre: string;
     foto: string;
+    nombre: string;   
 }
-
-export interface Analisis {
+export interface Precio{
     id: string;
+    precios: number;
     nombre: string;
-    precio: number;
 }
-
-export interface Recomendacion {
+export interface Recomendaciones{
     id: string;
-    descripcion: string;
+    recomendacion: string;
 }
-
-export interface Persona {
+export interface Categoriasl{
     id: string;
-    celular: string;
-    sexo: string;
-    nombre: string;
-    edad: number;
-    analisis: string;
+    categoriali: string;
 }
-
-export interface Cita{
-    id: string;
-    paciente: string;
-    tipo: string;
+export interface Agendado{
+    date:string;
+    id:string;
     fecha: string;
-    fechasub: any;
-    pago: string;
-    analisis: string;
     hora: string;
-    date: string;
-    textColor: string;
+    asunto: string;
+    nombre:string;
+    tipoanalisis: string;
     backgroundColor: string;
-    iduser: string;
-    file: string;
-    edad: number;
-  }
+    textColor: string;
+    idusuario:string;
+    File: string;
+  
+}
